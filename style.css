@@ -1,0 +1,229 @@
+img {
+    color: #100303;
+    color: #95389E;
+    color: #43D8C9;
+    color: #F7F7F7;
+}
+
+@font-face {
+    font-family: 'Foundation';
+    src: url('./font/FoundationTitlesHand-SemiBold-v0.85.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Basically';
+    src: url('./font/BasicallyASansSerif-Light.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    src: url('./font/Urbanist-Light.ttf') format('woff');
+}
+
+body{
+    background-color: white;
+    background-image: url("./assets/white-concrete-light.jpg");
+    color: #100303;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.body-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+/* -- NAVBAR --*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo-menu{
+    display: flex;
+}
+
+.menu{
+    color: #100303;
+    transition: color 0.3s ease;
+}
+
+.menu:hover{
+    color: #95389E;
+}
+
+h1 {
+    margin: 0;
+    font-family:'Foundation', sans-serif;
+    font-size: 2rem;
+    margin-left: 10px;
+    transition: text-shadow 0.3s ease;
+    color: #100303;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.24);
+}
+
+h1:hover {
+    text-shadow: 3px 3px 3px #95389E;
+}
+
+.icones a {
+    text-decoration: none;
+    color: #100303;
+}
+
+.whatsapp, .spotify { 
+    margin-right: 10px; 
+    transition: color 0.3s ease;
+}
+
+.whatsapp:hover, .spotify:hover {
+    color: #43D8C9;    
+}
+
+/* -- MENU --*/
+
+.menu {
+    cursor: pointer;
+}
+
+.sub-menu {
+    background: #000000;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 0px;
+    padding-right: 20px;
+    border-left: solid #F7F7F7;
+}
+
+.sub-menu-sobre, .sub-menu-participe{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #F7F7F7;
+    margin: 10px 0 10px;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.sub-menu-sobre svg, .sub-menu-participe svg{
+    margin-right: 10px;
+}
+
+.sub-menu-participe:hover, .sub-menu-sobre:hover{
+    font-weight: bolder;
+}
+
+.sub-menu-sobre p, .sub-menu-participe p{
+    width: 100%;
+    font-size: 19px;
+}
+
+.sub-menu-sobre span, .sub-menu-participe span{
+    transition: transform 0.5s;
+}
+
+.sub-menu-sobre:hover span, .sub-menu-participe:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 7%;
+    width: 265px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.8s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+/* -- SOBRE --*/
+
+.side-menu-sobre{
+    background-color: #000000;
+    color: #F7F7F7;
+    position: absolute;
+    top: 7%;
+    text-align: justify;
+    max-width: 0px;
+    max-height: 220px;
+    overflow: hidden;
+    margin-left: 280px;
+    transition: max-width 0.8s;
+}
+
+.side-menu-sobre p{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.side-menu-sobre.open-menu-side{
+    max-width: 400px;
+    height: 220px;
+    overflow: hidden;
+}
+
+/* -- PARTICIPE --*/
+
+.side-menu-participe{
+    background-color: #000000;
+    color: #F7F7F7;
+    position: absolute;
+    top: 7%;
+    text-align: justify;
+    max-width: 0px;
+    max-height: 220px;
+    overflow: hidden;
+    margin-left: 280px;
+    transition: max-width 0.8s;
+}
+
+.side-menu-participe p{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.side-menu-participe.open-menu-side{
+    max-width: 400px;
+    height: 220px;
+    overflow: hidden;
+}
+
+/* -- FUNDO --*/
+
+.imagem-fundo{
+    display:flex;
+    margin: 0 auto;
+}
+
+.imagem-fundo img{
+    margin-top: 30vh;
+    width: 65vh;
+    height: 50vh;
+}
+
+/* -- FOOTER-PRINCIPAL --*/
+
+.footer-principal{
+    color: #f7f7f7c7;
+    margin-top: 30px;
+    font-size: 0.75rem;
+    align-self: flex-end;
+    transition: color 0.3s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-principal:hover{
+    color: #F7F7F7;
+}
+
+/* -- CORPO --*/
+/* -- FOOTER --*/
